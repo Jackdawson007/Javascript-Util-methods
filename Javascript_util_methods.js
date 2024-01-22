@@ -48,3 +48,12 @@ String.prototype.IndexAllString = function(findvalue) {
 String.prototype.equalsIgnoreCase = function(str1,str2) {
 	return str1.toLowerCase() === str2.toLowerCase();
 }
+
+const readTextFileIntoArray = function (filename) {
+    const fileContent = fs.readFileSync(filename, 'utf8');
+    const fileLines = fileContent.split("\n");
+    return fileLines;
+}
+
+// Example How to do that
+// var output = new readTextFileIntoArray(yourFileName);
