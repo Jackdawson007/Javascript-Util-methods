@@ -49,6 +49,8 @@ String.prototype.equalsIgnoreCase = function(str1,str2) {
 	return str1.toLowerCase() === str2.toLowerCase();
 }
 
+var fs = require('fs');
+
 const readTextFileIntoArray = function (filename) {
     const fileContent = fs.readFileSync(filename, 'utf8');
     const fileLines = fileContent.split("\n");
