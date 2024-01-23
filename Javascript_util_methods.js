@@ -21,11 +21,11 @@ String.prototype.IndexAllString = function(findvalue) {
 	var output_list = [];
 
 	if (firstIndex != -1) {
-		for (let i=firstIndex; i < string.length; i++) {
+		for (let i=firstIndex; i <= string.length; i++) {
 			if (string[i] === findvalue[0]) {
 				let found = true;
 
-				for (let j=1; j<=findvalue.length; j++) {
+				for (let j=1; j<findvalue.length; j++) {
 					if (string[i+j] != findvalue[j]) {
 						found = false;
 						break;
